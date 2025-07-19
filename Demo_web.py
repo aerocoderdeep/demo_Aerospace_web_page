@@ -22,13 +22,6 @@ st.set_page_config(page_title="Aerospace Web Page",
                    page_icon="Screenshot (50).png", 
                    layout="wide")
 
-# Encode local image to base64 string
-def get_base64_image(image_path):
-    with Image.open(image_path) as img:
-        buffered = BytesIO()
-        img.save(buffered, format="PNG")
-        return base64.b64encode(buffered.getvalue()).decode()
-   
 # ✅ Function to encode image to base64 for background
 def get_base64(image_path):
     with open(image_path, "rb") as img_file:
