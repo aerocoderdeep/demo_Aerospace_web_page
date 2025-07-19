@@ -147,7 +147,7 @@ def welcome_page():
                 return base64.b64encode(buffered.getvalue()).decode()
 
         # Full absolute path to the image
-        image_path = "D:/Education work/Amantah Education/AEROSPACE/923965.jpg"
+        image_path = "923965.jpg"
 
         # Check if image exists first
         if os.path.exists(image_path):
