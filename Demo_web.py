@@ -650,7 +650,7 @@ def welcome_page():
                                 except FileNotFoundError:
                                     st.error("Background image not found. Please check the file path.")
                             # ✅ Set background image (Make sure the path is correct)
-                            Airfoil_Section("D:/Education work/Amantah Education/AEROSPACE/flap-types-img_0712.jpg.optimal.jpg")
+                            Airfoil_Section("flap-types-img_0712.jpg.optimal.jpg")
                             st.sidebar.write("## Airfoil Plotter")  
                             Airfoil_Section = st.sidebar.radio("Select Options", ["History of Airfoil", "Types of Airfoil", "Airfoil Calculation"])
                             if Airfoil_Section == "History of Airfoil":
@@ -1303,7 +1303,7 @@ def welcome_page():
                                     except FileNotFoundError:
                                         st.error("Background image not found. Please check the file path.")
                         # ✅ Set background image (Make sure the path is correct)
-                        Earth_Atmosphere("D:/Education work/Amantah Education/AEROSPACE/photo-1534294228306-bd54eb9a7ba8.jpg")
+                        Earth_Atmosphere("photo-1534294228306-bd54eb9a7ba8.jpg")
                         st.sidebar.write("## Earth Atmosphere")  
                         Earth_Atmosphere= st.sidebar.radio("Select Options",["History of Earth Atmosphere ", "Types of Earth Atmosphere Layer","Earth Atmosphere Pressure Density and Temperature Calculation"])
 
@@ -1861,7 +1861,7 @@ def welcome_page():
                                     except FileNotFoundError:
                                         st.error("Background image not found. Please check the file path.")
                                 # ✅ Set background image (Make sure the path is correct)
-                                wind_tunnel("D:/Education work/Amantah Education/AEROSPACE/MD-11_12ft_Wind_Tunnel_Test.jpg")
+                                wind_tunnel("MD-11_12ft_Wind_Tunnel_Test.jpg")
                                 st.sidebar.write("## Wind Tunnel")  
                                 wind_tunnel_option = st.sidebar.radio("Select Options", ["History of Wind Tunnel", "Types of Wind Tunnel", 
                                                                        "Low Subsonic Incompressible Wind Tunnel Design Calculation", 
@@ -2508,7 +2508,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    Available_Topic_Wise_Notes_For_Download("D:/Education work/Amantah Education/AEROSPACE/White Orange 3D Illustration Marketing Blog Banner.jpg")
+                    Available_Topic_Wise_Notes_For_Download("White Orange 3D Illustration Marketing Blog Banner.jpg")
                     UPLOAD_DIR = "uploads"
 
                     def save_uploaded_file(uploaded_file, subject):
@@ -2623,7 +2623,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    Educational_Video("D:/Education work/Amantah Education/AEROSPACE/1070169.png")
+                    Educational_Video("1070169.png")
                     # Directories
                     VIDEO_DIR = "videos"
                     os.makedirs(VIDEO_DIR, exist_ok=True)
@@ -2711,7 +2711,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    Feedback_of_Website("D:/Education work/Amantah Education/AEROSPACE/time-for-feedback-message-written-on-blue-wooden-stick-with-yellow-background-conceptual-time-for-feedback-symbol-copy-space-photo.jpg")
+                    Feedback_of_Website("time-for-feedback-message-written-on-blue-wooden-stick-with-yellow-background-conceptual-time-for-feedback-symbol-copy-space-photo.jpg")
            
             elif  Feedback_Area== "Technical Error Value Feedback":
                     # Function to set background
@@ -2734,7 +2734,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    Feedback_of_Website("D:/Education work/Amantah Education/AEROSPACE/480537.png")
+                    Feedback_of_Website("480537.png")
 
         def New_Notification_Update():
                     # Function to set background
@@ -2757,7 +2757,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    New_Notification_Update("D:/Education work/Amantah Education/AEROSPACE/premium_photo-1682309572625-791e25352998.jpeg")
+                    New_Notification_Update("premium_photo-1682309572625-791e25352998.jpeg")
                     
         def Contact_Details():
             # Function to set background
@@ -2780,7 +2780,7 @@ def welcome_page():
                 except FileNotFoundError:
                     st.error("Background image not found. Please check the file path.")
             # ✅ Set background image (Make sure the path is correct)
-            Contact_Details("D:/Education work/Amantah Education/AEROSPACE/Purple and White Simple Technology YouTube Video Intro.jpg")
+            Contact_Details("Purple and White Simple Technology YouTube Video Intro.jpg")
             Contact_Details = st.sidebar.radio("Select Options", ["Contact Details"])
             if Contact_Details=="Contact Details":
                     # ✅ Contact & Social Media
