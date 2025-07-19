@@ -18,8 +18,8 @@ import smtplib
 from email.message import EmailMessage
 
 # ✅ Set page configuration FIRST
-st.set_page_config(page_title="Amantah Education", 
-                   page_icon="D:/Education work/Amantah Education/AEROSPACE/Screenshot (50).png", 
+st.set_page_config(page_title="Aerospace Web Page", 
+                   page_icon="Screenshot (50).png", 
                    layout="wide")
 
 # Encode local image to base64 string
@@ -30,7 +30,7 @@ def get_base64_image(image_path):
         return base64.b64encode(buffered.getvalue()).decode()
 
 # Full absolute path to the image
-image_path = "D:/Education work/Amantah Education/AEROSPACE/Image Background Colorful Minimal Phone Wallpaper (1).jpg"
+image_path = "Image Background Colorful Minimal Phone Wallpaper (1).jpg"
 
 # Check if image exists first
 if os.path.exists(image_path):
@@ -195,9 +195,9 @@ def welcome_page():
                             st.error("Background image not found. Please check the file path.")
 
                     # ✅ Apply background image (Make sure the path is correct)
-                    set_background("D:/Education work/Amantah Education/AEROSPACE/Sukhoi Su-30 Fighter Jet Desktop Wallpaper.jpg")
+                    set_background("Sukhoi Su-30 Fighter Jet Desktop Wallpaper.jpg")
                     # ✅ Load the logo
-                    logo = Image.open("D:/Education work/Amantah Education/AEROSPACE/Screenshot (50).png")
+                    logo = Image.open("Screenshot (50).png")
                     # ✅ Header Section
                     st.image(logo, width=150)
                     st.title("🛸 Welcome to the Aerospace Demo Web Page")
@@ -342,7 +342,7 @@ def welcome_page():
                         except FileNotFoundError:
                             st.error("Background image not found. Please check the file path.")
                     # ✅ Set background image (Make sure the path is correct)
-                    about("D:/Education work/Amantah Education/AEROSPACE/2488575.jpg")
+                    about("2488575.jpg")
                     # Title of the page
                     st.title("✈️ About Aerospace")
                     st.markdown("""
@@ -373,7 +373,7 @@ def welcome_page():
                     # Create columns to display team members side by side
                     col1, = st.columns(1)
                     with col1:
-                        team_member1 = Image.open("D:/Education work/Amantah Education/AEROSPACE/aman.jpeg").resize((150, 150))
+                        team_member1 = Image.open("aman.jpeg").resize((150, 150))
                         st.image(team_member1)
                         st.markdown("Mr. Amandeep Singh")
                         st.markdown("""
@@ -423,7 +423,7 @@ def welcome_page():
                                     except FileNotFoundError:
                                         st.error("Background image not found. Please check the file path.")
                         # ✅ Set background image (Make sure the path is correct)
-                        Dimension_Section("D:/Education work/Amantah Education/AEROSPACE/Pressure-nbqxhy.jpg")
+                        Dimension_Section("Pressure-nbqxhy.jpg")
                         def convert_units(value, from_unit, to_unit, conversion_dict):
                             if from_unit in conversion_dict and to_unit in conversion_dict:
                                 return value * conversion_dict[to_unit] / conversion_dict[from_unit]
@@ -490,7 +490,7 @@ def welcome_page():
                                 except FileNotFoundError:
                                     st.error("Background image not found. Please check the file path.")
                      # ✅ Set background image (Make sure the path is correct)
-                     Dimension_Section("D:/Education work/Amantah Education/AEROSPACE/pexels-weekendplayer-187041.jpg")
+                     Dimension_Section("pexels-weekendplayer-187041.jpg")
                      Graph_Plotter = st.sidebar.radio("Select Options", ["Cl vs Aoa","Cd vs Aoa","Cl vs Cd","Aerodynamic efficiency vs Aoa"])
                      if Graph_Plotter=="Cl vs Aoa":
                             st.title("Cl vs AOA Plotter")
