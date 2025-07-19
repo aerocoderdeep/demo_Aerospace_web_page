@@ -77,7 +77,7 @@ def set_background(image_path):
         st.error("Background image not found. Please check the file path.")
 
 # ✅ Apply background image (Make sure the path is correct)
-set_background("D:/Education work/Amantah Education/AEROSPACE/Demo.png")
+set_background("Demo.png")
 
 # ---------- STYLING ----------
 def set_custom_styles():
