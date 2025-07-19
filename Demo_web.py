@@ -31,27 +31,7 @@ def get_base64_image(image_path):
 
 # Full absolute path to the image
 image_path = "Image Background Colorful Minimal Phone Wallpaper (1).jpg"
-
-# Check if image exists first
-if os.path.exists(image_path):
-    img_base64 = get_base64_image(image_path)
-
-    # Apply background to sidebar using a more reliable CSS selector
-    st.markdown(
-        f"""
-        <style>
-        [data-testid="stSidebar"] {{
-            background-image: url("data:image/png;base64,{img_base64}");
-            background-size: cover;
-            background-position: center;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-else:
-    st.sidebar.error("Image file not found!")
-    
+   
 # ✅ Function to encode image to base64 for background
 def get_base64(image_path):
     with open(image_path, "rb") as img_file:
