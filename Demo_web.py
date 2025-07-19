@@ -28,9 +28,6 @@ def get_base64_image(image_path):
         buffered = BytesIO()
         img.save(buffered, format="PNG")
         return base64.b64encode(buffered.getvalue()).decode()
-
-# Full absolute path to the image
-image_path = "Image Background Colorful Minimal Phone Wallpaper (1).jpg"
    
 # ✅ Function to encode image to base64 for background
 def get_base64(image_path):
